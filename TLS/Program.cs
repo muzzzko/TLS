@@ -13,6 +13,7 @@ namespace TLS
             TLSClient tlsClient = new TLSClient();
             tlsClient.ConnectToServer();
             tlsClient.sendClientHello();
+            tlsClient.ReceiveMessage();
         }
     }
 }

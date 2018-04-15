@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLS", "TLS\TLS.csproj", "{2FBFA62E-A2DE-4427-934E-20C1D2B238B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bleichenbacher", "Bleichenbacher\Bleichenbacher.csproj", "{47734272-DE81-4629-8827-8C47C2A389C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2FBFA62E-A2DE-4427-934E-20C1D2B238B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FBFA62E-A2DE-4427-934E-20C1D2B238B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FBFA62E-A2DE-4427-934E-20C1D2B238B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47734272-DE81-4629-8827-8C47C2A389C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47734272-DE81-4629-8827-8C47C2A389C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47734272-DE81-4629-8827-8C47C2A389C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47734272-DE81-4629-8827-8C47C2A389C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

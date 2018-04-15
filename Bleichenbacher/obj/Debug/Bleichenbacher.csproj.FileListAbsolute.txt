@@ -1,0 +1,6 @@
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\bin\Debug\Bleichenbacher.exe.config
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\bin\Debug\Bleichenbacher.exe
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\bin\Debug\Bleichenbacher.pdb
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\obj\Debug\Bleichenbacher.csprojResolveAssemblyReference.cache
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\obj\Debug\Bleichenbacher.exe
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\Bleichenbacher\obj\Debug\Bleichenbacher.pdb

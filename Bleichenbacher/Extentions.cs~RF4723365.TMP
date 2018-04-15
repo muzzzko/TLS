@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace Bleichenbacher
+{
+    class Extentions
+    {
+        public static readonly BigInteger p = 10000000000037;
+        public static readonly BigInteger q = 20999939;
+        public static readonly BigInteger e = 65535;
+        public static BigInteger GCD(BigInteger a, BigInteger b, out BigInteger x, out BigInteger y)
+        {
+            if (a == 0)
+            {
+                x = 0;
+                y = 1;
+                return b;
+            }
+            BigInteger x1, y1;
+            BigInteger d = GCD(b % a, a, out x1, out y1);
+            x = y1 - (b / a) * x1;
+            y = x1;
+            return d;
+        }
+    }
+}

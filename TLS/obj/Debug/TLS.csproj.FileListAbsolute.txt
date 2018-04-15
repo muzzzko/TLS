@@ -1,1 +1,6 @@
 C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\bin\Debug\TLS.exe.config
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\bin\Debug\TLS.exe
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\bin\Debug\TLS.pdb
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\obj\Debug\TLS.csprojResolveAssemblyReference.cache
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\obj\Debug\TLS.exe
+C:\Users\Егор\Documents\Visual Studio 2015\Projects\Univer\TTM\TLS\TLS\obj\Debug\TLS.pdb
