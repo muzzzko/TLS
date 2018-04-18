@@ -13,12 +13,14 @@ namespace Bleichenbacher
     {
         static void Main(string[] args)
         {
-            RSA_PKCS rsa = new RSA_PKCS();
             PublicKey publicKey = new PublicKey();
             PrivateKey privateKey = new PrivateKey();
+            RSA_PKCS rsa = new RSA_PKCS(privateKey);    
             string message = "hello, Egor";
             string cipherText = rsa.Encode(publicKey, message);
-            message = rsa.Decode(privateKey, cipherText);
+
+            Attack attack = new Attack(rsa, publicKey, privateKey);
+            attack.Start(cipherText);
         }
     }
 }

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attack.cs" />
     <Compile Include="Exceptions\DecryptionErrorExecption.cs" />
     <Compile Include="Exceptions\MessageTooLongException.cs" />
     <Compile Include="Extentions.cs" />

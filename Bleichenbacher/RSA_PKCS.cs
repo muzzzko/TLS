@@ -7,6 +7,17 @@ namespace Bleichenbacher
 {
     class RSA_PKCS
     {
+        public RSA_PKCS(PrivateKey privateKey)
+        {
+            PrivateKey = privateKey;
+        }
+
+
+
+        private PrivateKey PrivateKey;
+
+
+
         public string Encode(PublicKey key, string message)
         {
             string cipherText;
@@ -33,18 +44,18 @@ namespace Bleichenbacher
             return cipherText;
         }
 
-        public string Decode(PrivateKey key, string cipherText)
+        public string Decode(string cipherText)
         {
             int cipherTextLength = cipherText.Length;
-            if (cipherTextLength != key.getK())
+            if (cipherTextLength != PrivateKey.getK())
             {
                 throw new ArgumentException("Decription error");
             }
 
             BigInteger c = OS2IP(cipherText);
-            c = PowModul(c, key.getD(), key.GetN());
-            string message = I2OSP(c, key.getK());
-            if (message[0] != '0' && message[1] != '2')
+            c = PowModul(c, PrivateKey.getD(), PrivateKey.GetN());
+            string message = I2OSP(c, PrivateKey.getK());
+            if (message[0] != '0' || message[1] != '2')
             {
                 throw new DecryptionErrorExecption("First two bytes is wrong");
             }
@@ -68,7 +79,7 @@ namespace Bleichenbacher
 
 
 
-        private BigInteger PowModul(BigInteger basis, BigInteger degree, BigInteger modul)
+        public BigInteger PowModul(BigInteger basis, BigInteger degree, BigInteger modul)
         {
             BigInteger item = basis;
             BigInteger result = 1;
@@ -84,7 +95,7 @@ namespace Bleichenbacher
             return result;
         }
 
-        private string I2OSP(BigInteger x, BigInteger xLen)
+        public string I2OSP(BigInteger x, BigInteger xLen)
         {
             string octetItem = "";
             while (xLen > 0)
@@ -96,7 +107,7 @@ namespace Bleichenbacher
             return octetItem;
         }
 
-        private BigInteger OS2IP(string x)
+        public BigInteger OS2IP(string x)
         {
             BigInteger item = 0;
             int xLen = x.Length - 1;
